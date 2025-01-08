@@ -2,27 +2,25 @@ import { buttonVariants } from "@/src/components/ui/button";
 import {
   Card,
   CardContent,
-  CardDescription,
   CardHeader,
   CardTitle,
 } from "@/src/components/ui/card";
 import Link from "next/link";
 
-export default function Home() {
+export default async function Page() {
   return (
     <Card>
       <CardHeader>
-        <CardTitle>Navigation</CardTitle>
+        <CardTitle>Navigation : /admin</CardTitle>
       </CardHeader>
-      <CardContent>
+      <CardContent className="flex flex-col gap-4">
         <Link
-          href="/admin"
           className={buttonVariants({ size: "lg", variant: "outline" })}
+          href="/admin/citation/new"
         >
-          Admin
+          Create citation
         </Link>
       </CardContent>
-      <CardDescription>App page</CardDescription>
     </Card>
   );
 }

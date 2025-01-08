@@ -10,6 +10,11 @@ export default {
   ],
   theme: {
     extend: {
+      fontFamily: {
+        source: ["Source Code Pro"],
+        playwrite: ["Playwrite AU SA", "serif"],
+        ubuntu: ["Ubuntu", "serif"],
+      },
       colors: {
         background: "hsl(var(--background))",
         foreground: "hsl(var(--foreground))",
